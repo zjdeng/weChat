@@ -11,7 +11,7 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
-  //事件处理函数
+  // 喜欢
   bindLike: function() {
     console.log(this.data.ifLike)
     if (this.data.ifLike) {
