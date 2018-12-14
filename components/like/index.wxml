@@ -1,0 +1,5 @@
+<!--components/like/index.wxml-->
+<view class="like">
+  <image src="{{ifLike ? 'images/like.png' : 'images/like@dis.png'}}" bind:tap="bindLike"/>
+  <text>{{ likeNum }}</text>
+</view>

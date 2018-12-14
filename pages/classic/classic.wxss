@@ -1,47 +1,29 @@
-/**index.wxss**/
-/* .userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-} */
 .classic-header {
   width: 690rpx;
   height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .header-left {
-  float: left;
-  padding-top: 10px;
   display: flex;
-  align-items: center;
+}
+.day {
+  display: flex;
+  align-items: baseline;
 }
 .text1 {
   font-size: 32rpx;
-  margin-top:18rpx;
 }
 .text2 {
   font-size: 58rpx;
   font-weight: bold;
-  /* border-right: solid 2px #000; */
 }
 .year {
-  float: right;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .text3 {
   font-size: 24rpx;
@@ -50,21 +32,12 @@
 }
 .text4 {
   font-size: 20rpx;
+  display: block;
 }
 .header-right {
-  float: right;
-  padding-top: 10px;
+  display: flex;
 }
-.header-right .like {
-  width: 32rpx;
-  height: 28rpx;
-}
-.header-right text {
-  color: #c4c4c4;
-  font-size: 18rpx;
-  vertical-align:10px;
-  margin-right: 30rpx;
-}
+
 .header-right .share {
   width: 28rpx;
   height: 28rpx;

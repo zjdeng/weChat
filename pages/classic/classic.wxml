@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="classic-header">
+    <view class="header-left">
+      <view class="day">
+        <text class="text1">No.</text>
+        <text class="text2">17</text>
+      </view>
+      <view class="year">
+        <text class="text3">二月</text>
+        <text class="text4">2018</text>
+      </view>
+    </view>
+    <view class="header-right">
+      <like-cmp />
+      <image class="share" src="../../images/classic/分享@2x.png"/>
+    </view>
+  </view>
+  <view class="classic-body">
+    <image class="main-pic" src="../../images/classic/《饮食男女》@2x.png"/>
+    <image class="sub-pic" src="../../images/classic/电影。@2x.png"/>
+    <text class="main-text">人生不能像做菜，把所有的料准备好了才下锅。</text>
+  </view>
+  <view class="classic-operation">
+    <image class="prevBtn" src="../../images/classic/上一个@2x.png"/>
+    <image class="nextBtn" src="../../images/classic/下一个@2x.png"/>
+    <text>李安《饮食男女》</text>
+  </view>
+</view>

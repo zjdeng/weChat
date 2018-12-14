@@ -1,14 +1,15 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/classic/classic",
     "pages/logs/logs"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "微信接口功能演示",
-    "backgroundColor": "#333333",
-    "backgroundTextStyle": "light"
+    "navigationBarTitleText": "旧岛3",
+    "backgroundColor": "#eee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "selectedColor": "#000",
@@ -16,7 +17,7 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/classic/classic",
         "text": "流行",
         "iconPath": "images/classic.png",
         "selectedIconPath": "images/classic@highlight.png"
