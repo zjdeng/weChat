@@ -1,4 +1,4 @@
-// import {config} from '/config.js'
+import {config} from '../config.js'
 const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
@@ -22,13 +22,18 @@ class HTTP {
       method: params.method,
       data: params.data,
       header: {
-        'content-type': 'application/json',
-        'appkey': ''
+        'content-type': 'application/json'
       },
       success: (res) => {
-        const code = res.statusCode
-        if (code.startsWith('2')) {
-
+        const code = res.data.responseType
+        if (code === 'N') {
+          params.success(res.data.responseData)
+        } else {
+          wx.showToast({
+            title: '错误',
+            icon: 'none',
+            duration: 2000
+          })
         }
       },
       fail: () => {
@@ -42,3 +47,4 @@ module.exports = {
   formatTime: formatTime,
   HTTP: HTTP
 }
+// export {HTTP}

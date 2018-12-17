@@ -1,8 +1,8 @@
 //index.js
-// import {HTTP} from '/utils/util.js'
+import {HTTP} from '../../utils/util.js'
 //获取应用实例
 const app = getApp()
-// let http = new HTTP()
+let http = new HTTP()
 Page({
   data: {
     ifLike: true,
@@ -13,9 +13,12 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   onLoad: function () {
-    // http.request({
-
-    // })
+    http.request({
+      url: 'clinic/vspmanager/process/queryVspTemplateInfoList',
+      success: (res) => {
+        console.log(res)
+      }
+    })
   },
   getUserInfo: function(e) {
     console.log(e)
