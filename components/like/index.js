@@ -16,8 +16,6 @@ Component({
    * 组件的初始数据
    */
   data: {
-    ifLike: true,
-    likeNum: 111
   },
 
   /**
@@ -25,13 +23,18 @@ Component({
    */
   methods: {
     bindLike: function () {
-      let ifLike = this.data.ifLike
-      let likeNum = this.data.likeNum
+      let ifLike = this.properties.ifLike
+      let likeNum = this.properties.likeNum
       likeNum = ifLike ? likeNum - 1 : likeNum + 1
       this.setData({
         ifLike: !ifLike,
         likeNum: likeNum
       })
+
+      let behavior = this.properties.ifLike ? 'like' : 'cancel'
+      this.triggerEvent('like', {
+        behavior: behavior
+      }, {})
     }
   }
 })

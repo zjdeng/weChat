@@ -1,0 +1,24 @@
+/* components/classic/movie/index.wxss */
+.classic-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-pic {
+  width: 750rpx;
+  height: 500rpx;
+}
+.sub-pic {
+  width: 46rpx;
+  height: 142rpx;
+  margin-top: -70rpx;
+  position: relative;
+  right: 330rpx;
+}
+.main-text {
+  font-size: 34rpx;
+  /* display: block; */
+  max-width: 570rpx;
+  line-height: 50rpx;
+  margin: 25rpx auto 0;
+}

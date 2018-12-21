@@ -27,7 +27,7 @@ class HTTP {
       success: (res) => {
         const code = res.data.responseType
         if (code === 'N') {
-          params.success(res.data.responseData)
+          params.success && params.success(res.data.responseData)
         } else {
           wx.showToast({
             title: '错误',

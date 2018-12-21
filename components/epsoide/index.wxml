@@ -1,0 +1,10 @@
+<view class="header-left">
+  <view class="day">
+    <text class="text1">No.</text>
+    <text class="text2">{{ _index }}</text>
+  </view>
+  <view class="year">
+    <text class="text3">二月</text>
+    <text class="text4">2018</text>
+  </view>
+</view>

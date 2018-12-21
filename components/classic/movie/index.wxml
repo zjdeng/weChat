@@ -1,0 +1,5 @@
+<view class="classic-body">
+  <image class="main-pic" src="{{ img }}"/>
+  <image class="sub-pic" src="images/电影。@2x.png"/>
+  <text class="main-text">{{ content }}</text>
+</view>

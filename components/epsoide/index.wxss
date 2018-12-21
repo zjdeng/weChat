@@ -1,0 +1,29 @@
+/* components/epsoide/index.wxss */
+.header-left {
+  display: flex;
+}
+.day {
+  display: flex;
+  align-items: baseline;
+}
+.text1 {
+  font-size: 32rpx;
+}
+.text2 {
+  font-size: 58rpx;
+  font-weight: bold;
+}
+.year {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text3 {
+  font-size: 24rpx;
+  line-height: 24rpx;
+  display: block;
+}
+.text4 {
+  font-size: 20rpx;
+  display: block;
+}

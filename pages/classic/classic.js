@@ -1,38 +1,45 @@
 //index.js
-import {HTTP} from '../../utils/util.js'
+import { ClassicModel } from '../../models/classic.js'
 //获取应用实例
-const app = getApp()
-let http = new HTTP()
+// const app = getApp()
+let classic = new ClassicModel()
 Page({
   data: {
-    ifLike: true,
+    ifLike: false,
     likeNum: 111,
     motto: 'Hello Dzj',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    movieSrc: 'images/《饮食男女》@2x.png',
+    movieText: '人生不能像做菜，把所有的料准备好了才下锅。',
+    indexNum: 0
   },
   onLoad: function () {
-    http.request({
-      url: 'clinic/vspmanager/process/queryVspTemplateInfoList',
-      success: (res) => {
-        console.log(res)
-      }
+    classic.getLatest((res) => {
+      console.log(res)
+      this.setData({
+        classicData: res,
+        indexNum: 5
+      })
     })
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  },
-  //转发
-  onShareAppMessage: function () {
-    return {
-      title: '转发标题',
-      path: '/pages/index'
-    }
+  clickLike: function (event) {
+    console.log(event)
   }
+  // getUserInfo: function(e) {
+  //   console.log(e)
+  //   app.globalData.userInfo = e.detail.userInfo
+  //   this.setData({
+  //     userInfo: e.detail.userInfo,
+  //     hasUserInfo: true
+  //   })
+  // },
+  // //转发
+  // onShareAppMessage: function () {
+  //   return {
+  //     title: '转发标题',
+  //     path: '/pages/index'
+  //   }
+  // }
 })
