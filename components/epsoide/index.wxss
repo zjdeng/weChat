@@ -12,11 +12,19 @@
 .text2 {
   font-size: 58rpx;
   font-weight: bold;
+  margin-right: 14rpx;
+}
+.line {
+  background-color: #000;
+  width: 4rpx;
+  height: 44rpx;
+  margin-right: 15rpx;
 }
 .year {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 5rpx;
 }
 .text3 {
   font-size: 24rpx;

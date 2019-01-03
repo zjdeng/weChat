@@ -8,9 +8,5 @@
     </view>
   </view>
   <movie-cmp class="classic-body" img="{{movieSrc}}" content="{{movieText}}"/>
-  <view class="classic-operation">
-    <image class="prevBtn" src="../../images/classic/上一个@2x.png"/>
-    <image class="nextBtn" src="../../images/classic/下一个@2x.png"/>
-    <text>李安《饮食男女》</text>
-  </view>
+  <navi-cmp class="navi"/>
 </view>
